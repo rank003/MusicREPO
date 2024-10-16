@@ -14,7 +14,7 @@ const Register = () => {
     e.preventDefault();
     
     try {
-      const response = await axios.post('https://musicrepobcknd.onrender.com:5000/api/auth/register', {
+      const response = await axios.post('https://musicrepobcknd.onrender.com/api/auth/register', {
         username,
         email,
         password
