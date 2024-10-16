@@ -1,0 +1,76 @@
+/* src/components/Navbar.css */
+.navbar {
+    background-color: #007BFF; /* Blue background */
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFD700; /* Burnt yellow text */
+    flex-wrap: wrap;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ADFF2F; /* Lemon green */
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: font-size 0.3s;
+}
+
+.navbar-brand:hover {
+    font-size: 26px; /* Increase size on hover */
+}
+
+.navbar-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #FFD700; /* Burnt yellow */
+    font-size: 18px;
+    font-weight: bold;
+    transition: font-size 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    font-size: 20px; /* Increase size on hover */
+    color: #ADFF2F; /* Lemon green on hover */
+}
+
+.btn-logout {
+    background: none;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFD700;
+    cursor: pointer;
+    transition: font-size 0.3s, color 0.3s;
+}
+
+.btn-logout:hover {
+    font-size: 20px; /* Increase size on hover */
+    color: #ADFF2F; /* Lemon green on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-link,
+    .btn-logout {
+        margin-bottom: 10px;
+    }
+}
