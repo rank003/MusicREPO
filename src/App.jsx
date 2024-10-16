@@ -5,7 +5,7 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import SavedTracks from './pages/SavedTracks';
 import MusicSearch from './pages/MusicSearch';
-import SpotifySearch from './pages/spotifySearch';
+import SpotifySearch from './pages/SpotifySearch';
 import Admin from './pages/Admin'
 
 function App() {
