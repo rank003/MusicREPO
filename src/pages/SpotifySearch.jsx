@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 
-
 const SpotifySearch = () => {
   const [query, setQuery] = useState('');
   const [albums, setAlbums] = useState([]);
@@ -10,8 +9,10 @@ const SpotifySearch = () => {
   const [userId, setUserId] = useState('');
   const [savedAlbums, setSavedAlbums] = useState({}); // State to track saved status for each album
 
-  const clientId = process.env.REACT_APP_SPOTIFY_CLIENT_ID;
-  const clientSecret = process.env.REACT_APP_SPOTIFY_CLIENT_SECRET
+  const clientId = '6692ac82c98e45d0b43e231bdfc05519'; // Replace with your actual client ID
+  const clientSecret = '2f506a1c19d44bd28f1a04eb9f17d3ab'; // Replace with your actual client secret
+
+  
 
   // Function to get the access token
   const getAccessToken = async () => {
