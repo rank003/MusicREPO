@@ -13,7 +13,7 @@ function SavedTracks() {
 
   const fetchSavedTracks = async () => {
     try {
-      const response = await axios.get('https://musicrepobcknd.onrender.com:5000/api/music/tracks', {
+      const response = await axios.get('https://musicrepobcknd.onrender.com/api/music/tracks', {
         headers: { Authorization: `Bearer ${token}` },
       });
       setTracks(response.data);
